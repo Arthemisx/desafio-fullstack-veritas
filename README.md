@@ -108,7 +108,6 @@ Aplicação fullstack com três colunas fixas (A Fazer, Em Progresso, Concluída
 - UI básica, pensada para MVP.
 
 ## Melhorias futuras
-<<<<<<< HEAD
 - Implementar testes automatizados (Go e React).
 - Adicionar banco de dados (PostgreSQL ou SQLite) para persistência robusta.
 - Melhorar UX com toasts, animações de transição e feedbacks mais elaborados.
@@ -117,10 +116,5 @@ Aplicação fullstack com três colunas fixas (A Fazer, Em Progresso, Concluída
 
 ## Documentação
 - `docs/user-flow.png` — fluxo de uso do usuário.
-=======
-- Banco de dados (PostgreSQL/SQLite).
-- UX aprimorada (toasts, animações, feedbacks).
-- Filtros e busca.
-- Autenticação e multiusuário.
->>>>>>> 204fae1 (Adicionando o user-flow e detalhando o readme)
+
 
