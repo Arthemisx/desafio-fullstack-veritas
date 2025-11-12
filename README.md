@@ -95,13 +95,6 @@ Aplicação fullstack com três colunas fixas (A Fazer, Em Progresso, Concluída
 - `vite.config.js`
   - `server.proxy` encaminha `'/tasks'` para `http://localhost:8080` em desenvolvimento.
 
-## Dicas de desenvolvimento
-- Se `:8080` estiver ocupado, libere a porta: `netstat -ano | findstr :8080` e `taskkill /F /PID <pid>`.
-- Após alterar `vite.config.js`, reinicie `npm run dev`.
-- Para testar rapidamente:
-  - Listar: `curl.exe http://localhost:8080/tasks`
-  - Atualizar status: `curl.exe -X PUT -H "Content-Type: application/json" -d "{\"status\":\"in_progress\"}" http://localhost:8080/tasks/1`
-
 ## Limitações conhecidas
 - Persistência simples em JSON local (sem banco de dados).
 - Sem autenticação.
