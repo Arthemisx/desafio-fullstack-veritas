@@ -5,7 +5,7 @@ node_modules/
 frontend/dist/
 frontend/.vite/
 
-# Dados gerados (opcional - você pode manter tasks.json se quiser dados de exemplo)
+# Dados gerados
 backend/data/tasks.json
 
 # Go

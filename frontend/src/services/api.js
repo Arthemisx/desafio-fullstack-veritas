@@ -1,4 +1,3 @@
-// Use relative paths in dev; Vite proxy forwards to backend.
 const API_URL = ''
 
 async function http(method, path, body) {

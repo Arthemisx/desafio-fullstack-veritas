@@ -50,7 +50,6 @@ function TaskCard({ task, onEdit, onMove, onDelete }) {
       draggable
       onDragStart={(e) => {
         e.dataTransfer.setData('text/plain', task.id)
-        // Dica visual durante arraste
         e.dataTransfer.effectAllowed = 'move'
       }}
     >

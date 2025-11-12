@@ -6,13 +6,12 @@ import (
     "github.com/gorilla/mux"
 )
 func main() {
-	// Carrega tarefas do disco (persistência opcional)
+	// Carrega tarefas do disco
 	if err := loadTasksFromDisk(); err != nil {
 		log.Println("Aviso: falha ao carregar tasks do disco:", err)
 	}
 	router := mux.NewRouter()
 
-	// Middleware CORS deve vir ANTES das rotas
 	router.Use(corsMiddleware)
 
 	router.HandleFunc("/tasks", GetTasks).Methods("GET")

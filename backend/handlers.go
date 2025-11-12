@@ -90,7 +90,7 @@ func CreateTask(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	// Validação básica (título obrigatório)
+	// Validação básica
 	if task.Title == "" {
 		http.Error(w, "Título é obrigatório", http.StatusBadRequest)
 		return
