@@ -37,7 +37,7 @@ Frontend
 - Stack: React 18 com Vite para boot rápido, HMR e build simples.
 - Estado e UI: useState , useEffect e useMemo para gerenciar tarefas, loading e erros sem Redux; agrupamento por status é memorizado.
 - Estilos: CSS único ( src/styles.css ) com variáveis e componentes mínimos, priorizando legibilidade e leveza.
-- UX: ações de editar, mover e excluir com feedback (loading/erro) e prompts nativos para simplicidade.
+- UX: ações de editar, mover e excluir com feedback (carregando/erro) e prompts nativos para simplicidade.
 
 ## Limitações conhecidas
 - Persistência simples em JSON local (sem banco de dados).
