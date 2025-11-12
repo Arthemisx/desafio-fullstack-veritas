@@ -1,0 +1,104 @@
+:root {
+  --bg: #0f172a;
+  --panel: #111827;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #6366f1;
+  --danger: #ef4444;
+  --border: #1f2937;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji;
+  background: var(--bg);
+  color: var(--text);
+}
+.container {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+h1 { margin: 0 0 16px; }
+.form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.form input {
+  flex: 1;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+.form button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.column {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  min-height: 200px;
+}
+.column.drag-over {
+  outline: 2px dashed var(--accent);
+  outline-offset: -6px;
+  background: #121a2b;
+}
+.column h2 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: var(--muted);
+}
+.card {
+  background: #0b1220;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 8px;
+  cursor: grab;
+}
+.card:active {
+  opacity: 0.85;
+  cursor: grabbing;
+}
+.card-title { font-weight: 600; }
+.card-desc { color: var(--muted); margin-top: 4px; font-size: 14px; }
+.card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+.card-actions button, .card-actions select {
+  background: #101826;
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+.card-actions .danger {
+  border-color: #3b0d12;
+  color: #fecaca;
+  background: #240a0d;
+}
+.info, .error {
+  margin: 10px 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+.info { background: #0b1324; border: 1px solid #142243; color: #c7d2fe; }
+.error { background: #220a0a; border: 1px solid #3a0c0c; color: #fecaca; }
+
