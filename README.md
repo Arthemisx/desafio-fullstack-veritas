@@ -6,7 +6,7 @@ Aplicação fullstack com três colunas fixas (A Fazer, Em Progresso, Concluída
 - `Go 1.22+`
 - `Node.js 18+` e `npm`
 
-## Como rodar
+## Como executar
 
 ### Backend (Go)
 - No diretório do projeto:
@@ -23,7 +23,7 @@ Aplicação fullstack com três colunas fixas (A Fazer, Em Progresso, Concluída
 - Acesse `http://localhost:5173` (ou `5174` se a 5173 estiver ocupada).
 - Em desenvolvimento, as chamadas ao backend usam caminho relativo (`/tasks`) e passam por proxy do Vite, evitando problemas de CORS.
 
-## Decisões e tecnicas tomadas
+## Decisões e técnicas tomadas
 - Arquitetura fullstack simples: backend em Go e frontend em React com Vite, focada em rapidez de desenvolvimento e baixa complexidade.
 - Fluxo de usuário documentado em docs/user-flow.png para alinhar expectativas de uso do mini-kanban.
 
