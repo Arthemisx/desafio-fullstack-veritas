@@ -24,7 +24,20 @@ Aplicação fullstack com três colunas fixas (A Fazer, Em Progresso, Concluída
 - Em desenvolvimento, as chamadas ao backend usam caminho relativo (`/tasks`) e passam por proxy do Vite, evitando problemas de CORS.
 
 ## Decisões e tecnicas tomadas
+- Arquitetura fullstack simples: backend em Go e frontend em React com Vite, focada em rapidez de desenvolvimento e baixa complexidade.
+- Fluxo de usuário documentado em docs/user-flow.png para alinhar expectativas de uso do mini-kanban.
+- 
+Backend
+- Framework: net/http com github.com/gorilla/mux para roteamento claro e leve.
+- Persistência: armazenamento em arquivo JSON backend/data/tasks.json para evitar dependência de banco e facilitar execução local.
+- IDs: sequenciais gerados no servidor e convertidos para string, garantindo compatibilidade com JSON e frontend.
+- CORS: middleware próprio permitindo origem dinâmica e pré-flight OPTIONS, viabilizando o desenvolvimento com servidor de frontend separado.
 
+Frontend
+- Stack: React 18 com Vite para boot rápido, HMR e build simples.
+- Estado e UI: useState , useEffect e useMemo para gerenciar tarefas, loading e erros sem Redux; agrupamento por status é memorizado.
+- Estilos: CSS único ( src/styles.css ) com variáveis e componentes mínimos, priorizando legibilidade e leveza.
+- UX: ações de editar, mover e excluir com feedback (loading/erro) e prompts nativos para simplicidade.
 
 ## Limitações conhecidas
 - Persistência simples em JSON local (sem banco de dados).
