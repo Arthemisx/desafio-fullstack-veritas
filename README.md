@@ -26,7 +26,7 @@ Aplicação fullstack com três colunas fixas (A Fazer, Em Progresso, Concluída
 ## Decisões e tecnicas tomadas
 - Arquitetura fullstack simples: backend em Go e frontend em React com Vite, focada em rapidez de desenvolvimento e baixa complexidade.
 - Fluxo de usuário documentado em docs/user-flow.png para alinhar expectativas de uso do mini-kanban.
-- 
+
 Backend
 - Framework: net/http com github.com/gorilla/mux para roteamento claro e leve.
 - Persistência: armazenamento em arquivo JSON backend/data/tasks.json para evitar dependência de banco e facilitar execução local.
