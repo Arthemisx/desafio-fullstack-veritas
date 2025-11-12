@@ -108,13 +108,10 @@ Aplicação fullstack com três colunas fixas (A Fazer, Em Progresso, Concluída
 - UI básica, pensada para MVP.
 
 ## Melhorias futuras
-- Implementar testes automatizados (Go e React).
 - Adicionar banco de dados (PostgreSQL ou SQLite) para persistência robusta.
 - Melhorar UX com toasts, animações de transição e feedbacks mais elaborados.
 - Adicionar filtros e busca de tarefas.
 - Implementar autenticação e multi-usuário.
 
-## Documentação
-- `docs/user-flow.png` — fluxo de uso do usuário.
 
 
