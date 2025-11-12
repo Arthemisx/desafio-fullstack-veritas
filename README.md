@@ -1,6 +1,6 @@
 # Mini Kanban (React + Go)
 
-Aplicação fullstack com três colunas fixas (A Fazer, Em Progresso, Concluídas), CRUD de tarefas, drag-and-drop entre colunas e persistência opcional em arquivo JSON no backend. Projeto atende ao MVP solicitado: operações básicas, validações, CORS, documentação, estrutura de pastas e execução local.
+Aplicação fullstack com três colunas fixas (A Fazer, Em Progresso, Concluídas), CRUD de tarefas, drag-and-drop entre colunas e persistência opcional em arquivo JSON no backend.
 
 ## Requisitos
 - `Go 1.22+`
@@ -37,12 +37,6 @@ Aplicação fullstack com três colunas fixas (A Fazer, Em Progresso, Concluída
 - `DELETE /tasks/{id}`
   - Remove tarefa. Exemplo: `curl.exe -X DELETE http://localhost:8080/tasks/1`
 
-### Códigos de retorno e erros
-- Sucesso: `200` (GET/PUT), `201` (POST), `204` (DELETE sem corpo)
-- Erros de validação: `400` com mensagem textual
-- Não encontrado: `404`
-- Erros internos: `500`
-
 ## Validações
 - Título obrigatório no `POST /tasks`
 - Status válido (`todo`, `in_progress`, `done`) no `POST` e `PUT`
@@ -56,22 +50,6 @@ Aplicação fullstack com três colunas fixas (A Fazer, Em Progresso, Concluída
 - Middleware aplica cabeçalhos de CORS permitindo requisições do frontend local (`Access-Control-Allow-Origin` dinâmico). `OPTIONS` é tratado.
 - Em desenvolvimento, o frontend usa proxy do Vite para `'/tasks'`, reduzindo atritos de CORS.
 
-## Estrutura do projeto
-```
-backend/
-  main.go        # rotas, CORS, inicialização do servidor e load das tarefas
-  handlers.go    # handlers HTTP, validações, persistência JSON
-  models.go      # definição do tipo Task
-frontend/
-  src/
-    pages/App.jsx      # UI Kanban, drag-and-drop, CRUD
-    services/api.js    # cliente HTTP para /tasks
-    styles.css         # estilos e feedback visual
-    main.jsx           # bootstrap React
-  vite.config.js       # proxy e configuração do dev server
-docs/
-  user-flow.png        # fluxo de uso (obrigatório)
-```
 
 ## Detalhes de implementação
 
