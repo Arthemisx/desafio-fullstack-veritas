@@ -63,6 +63,5 @@ Aplicação fullstack com três colunas (A Fazer, Em Progresso, Concluídas), CR
 - Implementar autenticação e multi-usuário.
 
 ## Documentação
-- `docs/user-flow.png` — fluxo de uso do usuário (obrigatório).
-- `docs/data-flow.png` — opcional.
+- `docs/user-flow.png` — fluxo de uso do usuário.
 
